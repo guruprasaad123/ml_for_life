@@ -1,0 +1,4 @@
+scikit-learn==0.20
+pandas==0.24.1
+numpy==1.16.2
+lightfm==1.15
