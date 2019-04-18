@@ -12,11 +12,11 @@ def write_to_csv(list):
     csvFile.close()
 
 # Step 1 - Authenticate
-consumer_key= 'PRZW3ENQp23NM3ZuN7E1HULUL'
-consumer_secret= 'mEhsPr0H1SyloPfg5pNvShif2Y3aFIRAAjKE60jLyKiDGhx9iA'
+consumer_key= '<consumer_key>'
+consumer_secret= '<consumer_secret>'
 
-access_token='962657191-PrrZ2cGPpLKb0XLJRU19VeRBx7xaNEsDYNKiYUyd'
-access_token_secret='nqf3sXVAojyRJtp3akcVX8Lrodj0h2Fk7rr01YNX4Thkh'
+access_token='<access_token>'
+access_token_secret='<access_token_secret>'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
