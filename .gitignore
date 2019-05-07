@@ -17,5 +17,7 @@ supervised/deep_dream_generator/lib
 supervised/deep_dream_generator/data
 supervised/genetic_programming/lib
 supervised/emnist/hashy
+datamining/orthonearme/node_modules
+
 .vscode/
 Pokemon_GAN/
