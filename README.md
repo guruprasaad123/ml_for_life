@@ -8,7 +8,7 @@ Folder `from_stratch` consists of ML projects that are build from scratch .
 
    This project was build with the intent of gaining more insighst about neural networks , Stochastic-gradient-descent , Logistic regresssion
 
-2. [Kmeans ](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/kmeans),
+2. [Kmeans ](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/k-means),
 
    Mimicks the scikit-learn's kmeans algorithm from scratch using just numpy.
 
