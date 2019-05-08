@@ -1,5 +1,5 @@
 from_scratch/__pycache__
-from_scratch/lib
+from_scratch/NN/lib
 into_datascience/__pycache__
 into_datascience/best_gender_classifier/lib
 into_datascience/twitter_sentiment_analysis/lib
