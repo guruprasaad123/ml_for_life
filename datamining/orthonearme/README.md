@@ -24,7 +24,7 @@ Below dependencies are required:
 
 `index.js` contains a 
 
-- asynchronous `fetch()` method, which performs the datamining by using recursive approach.
+- asynchronous `fetch()` method, which performs datamining by using recursive approach.
 
 - `writetofile` method , to write the data back to a json file for further processing in future
 
