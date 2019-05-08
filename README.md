@@ -4,11 +4,11 @@ This Repo consists of Machine Learning based projects that are build on opensour
 
 Folder `from_stratch` consists of ML projects that are build from scratch .
 
-1. [Neural Networks from scratch]() , 
+1. [Neural Networks from scratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/NN) , 
 
    This project was build with the intent of gaining more insighst about neural networks , Stochastic-gradient-descent , Logistic regresssion
 
-2. [Kmeans ](),
+2. [Kmeans ](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/kmeans),
 
    Mimicks the scikit-learn's kmeans algorithm from scratch using just numpy.
 
