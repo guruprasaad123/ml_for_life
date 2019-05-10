@@ -1,7 +1,7 @@
 ## About this Repo
 
 This Repo consists of Machine Learning based projects that are build on opensource frameworks like `scikit-learn, keras , tensorflow`.
-### from_stratch
+### [from_stratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch)
 Folder `from_stratch` consists of ML projects that are build from scratch .
 
 1. [Neural Networks from scratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/NN) , 
