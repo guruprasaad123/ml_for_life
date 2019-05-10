@@ -1,7 +1,7 @@
 ## About this Repo
 
 This Repo consists of Machine Learning based projects that are build on opensource frameworks like `scikit-learn, keras , tensorflow`.
-
+### from_stratch
 Folder `from_stratch` consists of ML projects that are build from scratch .
 
 1. [Neural Networks from scratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/NN) , 
@@ -11,7 +11,7 @@ Folder `from_stratch` consists of ML projects that are build from scratch .
 2. [Kmeans ](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/k-means),
 
    Mimicks the scikit-learn's kmeans algorithm from scratch using just numpy.
-
+### supervised
 Folder `supervised` consists of Real-time-applications / Projects based on Machine Learning.
 
 1. [best_gender_classifier](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/best_gender_classifier),
@@ -53,7 +53,7 @@ Folder `supervised` consists of Real-time-applications / Projects based on Machi
 10. [wordvec](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/wordvec), (under-developement)
 
     A simple service that lets you find related words that is related to "Arts" industry.
-
+### datamining
 Folder `datamining` consists of data-mining based projects.
 
 1. [orthonearme](https://github.com/guruprasaad123/ml_for_life/tree/master/datamining/orthonearme), (under-development)
