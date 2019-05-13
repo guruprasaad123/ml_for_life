@@ -19,5 +19,12 @@ supervised/genetic_programming/lib
 supervised/emnist/hashy
 datamining/orthonearme/node_modules
 
+supervised/auto_encoders/flower_images
+supervised/auto_encoders/flower_photos
+supervised/auto_encoders/generated
+supervised/auto_encoders/training
+supervised/auto_encoders/flower_images.zip
+supervised/auto_encoders/flower_photos.gzip
+
 .vscode/
 Pokemon_GAN/
