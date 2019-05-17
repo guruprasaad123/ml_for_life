@@ -1,0 +1,4 @@
+model_checkpoint_path: "AEColor_To_Gray.ckpt-49"
+all_model_checkpoint_paths: "AEColor_To_Gray.ckpt-47"
+all_model_checkpoint_paths: "AEColor_To_Gray.ckpt-48"
+all_model_checkpoint_paths: "AEColor_To_Gray.ckpt-49"
