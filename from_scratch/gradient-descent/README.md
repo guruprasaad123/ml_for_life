@@ -31,7 +31,7 @@ The hyperparameters that are involved in the process.<br>
 epochs = 1000 <br>
 initial_m = 0 <br>
 initial_b = 0 <br>
-learning_rate = 0.001 <br>
+learning_rate = 0.0001 <br>
 
    ```
 Running
