@@ -1,6 +1,8 @@
 from numpy import *
 import matplotlib.pyplot as plt
 import numpy as np
+from mpl_toolkits.mplot3d import Axes3D
+
 def compute_error(data,m,b):
         total_error=0
         N=float(len(data))
@@ -50,9 +52,28 @@ def plot(data,m , b):
         ax=fig.add_subplot(111)
         #print(data[0],data[1])
         #print(data[:,0],data[:,1])
-        ax.scatter(x,y,c='red')
-        ax.plot(x,y_)
+        ax.scatter(x,y,c='red',label="points (x,y)")
+        ax.plot(x,y_,label="line of best fit")
+        ax.set_xlabel('X (cycled)')
+        ax.set_ylabel('Y (cal burned)')
+
+        plt.title('Regression Line')
         plt.show()
+
+def plot_3d(error,m,b):
+        fig=plt.figure()
+        #ax = fig.gca(projection='3d')
+        ax=fig.add_subplot(111,projection='3d')
+        ax.scatter(m,b,error,c="r",label='valley')
+        
+        ax.set_xlabel('weight')
+        ax.set_ylabel('bias')
+        ax.set_zlabel('Error(w,b)')
+
+        ax.legend()
+        plt.title('Finding Minima')
+        plt.show()
+
 
 def perform_gradient_descent(data,m,b,epochs=1000):
         m_array=b_array=[]
@@ -62,11 +83,11 @@ def perform_gradient_descent(data,m,b,epochs=1000):
                 (m,b) = step_gradient_descent(data,m,b)
                 m_array.append(m)
                 b_array.append(b)
-        #plot(data,np.array(m_array),np.array(b_array))
+        #np.array(m_array),np.array(b_array))
 
-        plot(data,m,b)
+        plot(data,m,b) 
 
-        return (m,b)
+        return (m,b,m_array,b_array)
                 
 def run():
         print('Running')
@@ -75,8 +96,16 @@ def run():
         initial_b = 0
         error=compute_error(data,initial_m,initial_b)
         print("Error @ inital stage : {}".format(error))
-        (m,b)=perform_gradient_descent(data,initial_m,initial_b)
+        (m,b,m_array,b_array)=perform_gradient_descent(data,initial_m,initial_b)
         #print('gradient ',m,b)
+        N=len(m_array)
+        e_array=[]
+
+        for i in range(N):
+                e_array.append(compute_error(data,m_array[i],b_array[i]))
+        
+        #plot_3d(e_array,m_array,b_array) function for finding Minima
+
         error=compute_error(data,m,b)
         print("Error after Performing Gradient Descent : {}".format(error))
         
