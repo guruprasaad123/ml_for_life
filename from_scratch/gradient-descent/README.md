@@ -27,10 +27,11 @@ Run this below code to get-started.
 ```
 python3 demo.py
 ``` 
-epochs = 1000
-initial_m = 0
-initial_b = 0
-learning_rate = 0.001
+epochs = 1000 <br>
+initial_m = 0 <br>
+initial_b = 0 <br>
+learning_rate = 0.001 <br>
+
    ```
 Running
 Error @ inital stage : 5565.107834483212
