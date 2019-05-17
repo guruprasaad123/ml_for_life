@@ -21,9 +21,7 @@ pip install -r requirements.txt
 #### Partial derivative with respect to weights m and bias b (to perform gradient descent)
 ![error2](https://spin.atomicobject.com/wp-content/uploads/linear_regression_gradient1.png)
 
-
 ## Usage
-
 Run this below code to get-started.
 
 ```
@@ -45,8 +43,8 @@ Running 800/1000
 Running 900/1000
 Error after Performing Gradient Descent : 112.61481011613475
    ```
-For better visualization try this [file](https://github.com/guruprasaad123/ml_for_life/blob/master/from_scratch/gradient-descent/batch-gradient-descent.ipynb).<br>
-if you have jupyter-notebook installed in your system , play with this [file(https://github.com/guruprasaad123/ml_for_life/blob/master/from_scratch/gradient-descent/batch-gradient-descent.ipynb)<br>
+#### For better visualization try this [file](https://github.com/guruprasaad123/ml_for_life/blob/master/from_scratch/gradient-descent/batch-gradient-descent.ipynb).<br>
+if you have jupyter-notebook installed in your system , play with this [file](https://github.com/guruprasaad123/ml_for_life/blob/master/from_scratch/gradient-descent/batch-gradient-descent.ipynb)<br>
 
 ## Results
 
