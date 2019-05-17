@@ -27,7 +27,7 @@ Run this below code to get-started.
 ```
 python3 demo.py
 ``` 
-The hyperparameters that are involved in the process.
+The hyperparameters that are involved in the process.<br>
 epochs = 1000 <br>
 initial_m = 0 <br>
 initial_b = 0 <br>
