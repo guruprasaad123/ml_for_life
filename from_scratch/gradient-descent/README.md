@@ -8,6 +8,6 @@ This project is all about learning how gradient works.So the best way to learn s
 
 you can also install these requirements using `requirements.txt` using this command below.
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
