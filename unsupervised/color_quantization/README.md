@@ -31,6 +31,7 @@ Numpy is used for performing Linear Algebra and mathematically operations on the
 We'll use matplotlib to visualize the dorminant color at the end of the task , which is very usefull for people to understand
 
 learning resources for K-means:
+
 http://www.kdnuggets.com/2016/12/datascience-introduction-k-means-clustering-tutorial.html
 http://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_ml/py_kmeans/py_kmeans_understanding/py_kmeans_understanding.html
 http://people.revoledu.com/kardi/tutorial/kMean/
