@@ -54,7 +54,7 @@ Folder `supervised` consists of Real-time-applications / Projects based on super
 
    Project to recognise handwritten alphanumeric character with dataset using emnist (extention of mnist).
 
-## unsupervised
+## [unsupervised](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/)
 
 Folder `unsupervised` consists of Real-time-usecases / Projects based on unsupervised Learning.
 
