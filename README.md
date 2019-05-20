@@ -42,19 +42,15 @@ Folder `supervised` consists of Real-time-applications / Projects based on super
 
    Using tensorflow's convnet to perform deep dream , gradient-descent on images , video (under-development).
 
-6. [color_quantization](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/color_quantization),
-
-   Finding the dorminant colors present in the picture , frequency of occurance.
-
-7. [humane_or_not](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/humane_or_not),
+6. [humane_or_not](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/humane_or_not),
 
    Recognising whether the given image is humane or not ,using convnet built on keras.
 
-8. [genetic_programming](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/genetic_programming), (under-developement)
+7. [genetic_programming](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/genetic_programming), (under-developement)
 
    Using genetic programming to find the hyperparameters for a given dataset.
 
-9. [emnist](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/emnist), (under-developement)
+8. [emnist](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/emnist), (under-developement)
 
    Project to recognise handwritten alphanumeric character with dataset using emnist (extention of mnist).
 
