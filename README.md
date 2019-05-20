@@ -58,7 +58,7 @@ Folder `supervised` consists of Real-time-applications / Projects based on super
 
 Folder `unsupervised` consists of Real-time-usecases / Projects based on unsupervised Learning.
 
-1. [RGB-Grey](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/RGB_Grey), 
+1. [RGB-Grey](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/RGB-Grey), 
 
    Converting Images of one color system (RGB) to another color system (Grey) using `Autoencoders`.
 
