@@ -1,7 +1,9 @@
 ## About this Repo
 
 This Repo consists of Machine Learning based projects that are build on opensource frameworks like `scikit-learn, keras , tensorflow`.
+
 ## [from_stratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch)
+
 Folder `from_stratch` consists of ML projects that are build from scratch .
 
 1. [Neural Networks from scratch](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/NN) , 
@@ -11,8 +13,14 @@ Folder `from_stratch` consists of ML projects that are build from scratch .
 2. [Kmeans ](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/k-means),
 
    Mimicks the scikit-learn's kmeans clustering algorithm from scratch using just numpy.
+
+3. [Gradient-Descent](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/gradient-descent),
+
+    Implementation of gradient-descent without using any ML frameworks , just using `numpy` for computation and `matplotlib` for visualization.
+
 ## [supervised](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised)
-Folder `supervised` consists of Real-time-applications / Projects based on Machine Learning.
+
+Folder `supervised` consists of Real-time-applications / Projects based on supervised Learning.
 
 1. [best_gender_classifier](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/best_gender_classifier),
 
@@ -50,17 +58,29 @@ Folder `supervised` consists of Real-time-applications / Projects based on Machi
 
    Project to recognise handwritten alphanumeric character with dataset using emnist (extention of mnist).
 
-10. [wordvec](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised/wordvec), (under-developement)
+## unsupervised
 
-    A simple service that lets you find related words that is related to "Arts" industry.
+Folder `unsupervised` consists of Real-time-usecases / Projects based on unsupervised Learning.
+
+1. [RGB-Grey](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/RGB_Grey), 
+
+   Converting Images of one color system (RGB) to another color system (Grey) using `Autoencoders`.
+
+2. [color_quantization](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/color_quantization),
+
+   Finding the dorminant colors present in the picture , frequency of occurance.
+
+3. [wordvec](https://github.com/guruprasaad123/ml_for_life/tree/master/unsupervised/wordvec), (under-developement)
+
+   A simple service that lets you find related words that is related to "Arts" industry.
+
 ## [datamining](https://github.com/guruprasaad123/ml_for_life/tree/master/datamining)
+
 Folder `datamining` consists of data-mining based projects.
 
-1. [orthonearme](https://github.com/guruprasaad123/ml_for_life/tree/master/datamining/orthonearme), (under-development)
+11. [orthonearme](https://github.com/guruprasaad123/ml_for_life/tree/master/datamining/orthonearme), (under-development)
 
-   Web-app that lets you find the Ortho specialist near your proximity , based on rating / comments.
-
-
+    Web-app that lets you find the Ortho specialist near your proximity , based on rating / comments.
 
 Credits:
 

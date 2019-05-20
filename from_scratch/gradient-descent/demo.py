@@ -33,13 +33,15 @@ def step_gradient_descent(data,m,b,learning_rate=0.0001):
                 y_=(m*x)+b
                 m_gradient+= - (2/N)*(x*(y-y_))
                 b_gradient+= -(2/N)*(y-y_)
+           
         #print("m ={}, b ={}".format(m_gradient,b_gradient))
+        print(m_gradient)
+        print(b_gradient)
         m_new = m-(learning_rate*m_gradient)
         b_new = b-(learning_rate*b_gradient)
         return (m_new,b_new)
 
 def plot(data,m , b):
-        x=np.array(data[:,0])
         y=np.array(data[:,1])
         m=float(format(m,'.4g')[:3])
         b=float(format(b,'.4g')[:3])
