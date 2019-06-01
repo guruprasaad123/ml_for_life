@@ -74,6 +74,8 @@ def run():
 
     #Optimization
     train_opt = tf.train.AdamOptimizer(learning_rate=0.001).minimize(loss)
+    loss_summ = tf.summary.scalar('LOSS',loss)
+    file_writter =  tf.summary.FileWriter('./logs',tf.get_default_graph())
 
     init = tf.initialize_all_variables()
 
@@ -96,7 +98,11 @@ def run():
         batch_size = 0
         for batch_n in range(num_batches):
             _, c = sess.run([train_opt, loss], feed_dict = {inputs: batch_img, targets: batch_out})
+            loss_summ_str= sess.run(loss_summ, feed_dict = {inputs: batch_img, targets: batch_out})
             print("Epoch: {} - cost = {:.5f}" .format((ep+1), c))
+            
+            file_writter.add_summary(loss_summ_str,batch_n)
+            
             batch_img = source[batch_size: batch_size+32]
             batch_out = target[batch_size: batch_size+32]
             batch_size += 32
