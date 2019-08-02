@@ -42,6 +42,7 @@ def step_gradient_descent(data,m,b,learning_rate=0.0001):
         return (m_new,b_new)
 
 def plot(data,m , b):
+        x=np.array(data[:,0])
         y=np.array(data[:,1])
         m=float(format(m,'.4g')[:3])
         b=float(format(b,'.4g')[:3])

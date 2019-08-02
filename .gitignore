@@ -25,6 +25,7 @@ unsupervised/RGB-Grey/generated
 unsupervised/RGB-Grey/training
 unsupervised/RGB-Grey/flower_images.zip
 unsupervised/RGB-Grey/flower_photos.gzip
+unsupervised/siblingsgen
 
 .vscode/
 Pokemon_GAN/
