@@ -94,6 +94,7 @@ def catch_singularity(f):
         try:
             return f(*args, **kwargs)
         except np.linalg.LinAlgError:
+            print('singularity found !')
             warnings.warn('Algorithm terminated - singular Hessian!')
             return args[0]
     return silencer
@@ -162,7 +163,7 @@ def run_stepper(beta_old,beta_new,iter_count,converge=False):
     if(converge== True):
         return (beta_new,iter_count)
     else:
-        beta_new =  newton_step(beta_old,X,None)
+        beta_new =  alt_newton_step(beta_old,X,None)
         is_converged = check_for_convergence(beta_old,beta_new,tol,iter_count)
         if(is_converged):
             return run_stepper(beta_new,beta_old,iter_count+1,is_converged)
