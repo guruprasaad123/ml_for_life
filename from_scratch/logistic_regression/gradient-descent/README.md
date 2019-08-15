@@ -14,11 +14,19 @@ We use numpy for mathematical computation , pandas for framing the sample datase
 
 ## Under the hood
 
- *loss function* for logistic regression is different from linear regression
+ *loss function* for logistic regression is different from linear regression.
 
+For Linear Regression ,
 
+$$
+loss= \frac{1}{m}(y-y_{pred})^{2}
+$$
 
+For Logistic Regression ,
 
+$$
+loss = \frac{1}{m}(-ylog(h_{\theta}(x) \ -(1-y)( \ log(1-h_{\theta}(x) \ ) \ ) \ )
+$$
 
 
 
