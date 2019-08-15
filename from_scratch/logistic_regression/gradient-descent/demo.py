@@ -2,15 +2,22 @@ import numpy as np
 import pandas as pd
 from collections import OrderedDict
 
+def loss(h,y):
+    return ( -y * np.log(h) - ( 1- y )*(np.log(1-y)) ).mean()
+
 def add_intercept(X):
- 
     intercept = np.ones((X.shape[0],1))
     X= np.reshape(X,(-1,1))
     #print('intercept',intercept,X)
     return np.concatenate((intercept, X), axis=1)
 
+def predict(x,w):
+    x = add_intercept(x)
+    h = np.dot(x,w)
+    return sigmoid(h).round()
+
 def sigmoid(x):
-    return 1/(1+np.exp(x))
+    return 1/(1+np.exp(-x))
 
 def get_data():
     data = OrderedDict(
@@ -31,11 +38,11 @@ def gradient_descent_runner(X,y,learning_rate=0.01,epochs=10000):
         theta = np.dot(X,W)
         h = sigmoid(theta)
         gradient =  np.dot( X.T , h-y) / y.size 
-        W = W- ( learning_rate * gradient ) 
+        W = W - ( learning_rate * gradient ) 
         if i % 1000 == 0:
             print('Running : ',i)
     
-    print('updated W : ',W)
+    print('test : ',predict(np.array([[15],[155],[45]]),W))
         
 
 def run():
