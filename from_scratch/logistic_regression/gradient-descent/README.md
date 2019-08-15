@@ -18,9 +18,9 @@ We use numpy for mathematical computation , pandas for framing the sample datase
 
 For Linear Regression ,
 
-$$
+!
 loss= \frac{1}{m}(y-y_{pred})^{2}
-$$
+
 
 For Logistic Regression ,
 
