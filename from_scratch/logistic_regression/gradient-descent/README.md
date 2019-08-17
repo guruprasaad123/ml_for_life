@@ -18,15 +18,12 @@ We use numpy for mathematical computation , pandas for framing the sample datase
 
 For Linear Regression ,
 
-
-$$ loss= \frac{1}{m}(y-y_{pred})^{2} $$
+<p align="center"><img src="/from_scratch/logistic_regression/gradient-descent/tex/f81a893ca8e5ebd4cae3c4cc919d31ee.svg?invert_in_darkmode&sanitize=true" align=middle width=152.1768435pt height=32.990165999999995pt/></p>
 
 
 For Logistic Regression ,
 
-<<<<<<< HEAD
-$$ loss = \frac{1}{m}(-ylog(h_{\theta}(x) \ -(1-y)( \ log(1-h_{\theta}(x) \ ) \ ) \ ) $$
-=======
+
 <p align="center"><img src="/from_scratch/logistic_regression/gradient-descent/tex/990a43ac9c0e7b0d6a96fab23cf7db97.svg?invert_in_darkmode&sanitize=true" align=middle width=382.0617009pt height=32.990165999999995pt/></p>
 >>>>>>> 71b54c59438258288fc7321db7648ad9f44812e3
 
