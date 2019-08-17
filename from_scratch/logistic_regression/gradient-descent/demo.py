@@ -17,7 +17,21 @@ def predict(x,w):
     return sigmoid(h).round()
 
 def sigmoid(x):
+    '''
+    returns sigmoid h(x)= 1/(e^-x + 1) of the input x
+    '''
     return 1/(1+np.exp(-x))
+
+
+def check_for_convergence(beta_old,beta_new,tol=1e-3):
+    '''
+    Checks whether the coefficients have converged in the l-infinity norm.
+    Returns True if they have converged, False otherwise.'''
+    #calculate the change in the coefficients
+    coef_change = np.abs(beta_old - beta_new)
+    
+    #if change hasn't reached the threshold and we have more iterations to go, keep training
+    return not (np.any(coef_change>tol) )
 
 def get_data():
     data = OrderedDict(
@@ -32,15 +46,19 @@ def get_data():
 def gradient_descent_runner(X,y,learning_rate=0.01,epochs=10000):
     X = add_intercept(X)
     W = np.zeros(X.shape[1])
-    print('m =>' ,X)
+    #print('m =>' ,X)
 
     for i in range(epochs):
         theta = np.dot(X,W)
         h = sigmoid(theta)
         gradient =  np.dot( X.T , h-y) / y.size 
-        W = W - ( learning_rate * gradient ) 
+        W_old = W
+        W = W - ( learning_rate * gradient )
+        if check_for_convergence(W_old,W):
+            print('Converged @ ',i)
+            break; 
         if i % 1000 == 0:
-            print('Running : ',i)
+            print('Running : ',i,W,W_old)
     
     print('test : ',predict(np.array([[15],[155],[45]]),W))
         
