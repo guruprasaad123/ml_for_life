@@ -23,9 +23,7 @@ For Linear Regression ,
 
 For Logistic Regression ,
 
-
 <p align="center"><img src="/from_scratch/logistic_regression/gradient-descent/tex/990a43ac9c0e7b0d6a96fab23cf7db97.svg?invert_in_darkmode&sanitize=true" align=middle width=382.0617009pt height=32.990165999999995pt/></p>
->>>>>>> 71b54c59438258288fc7321db7648ad9f44812e3
 
 
 
