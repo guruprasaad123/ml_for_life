@@ -59,12 +59,13 @@ def hessian_runner(X,y,learning_rate=0.01,epochs=10000):
         W_old = W
         W = W - ( learning_rate * np.dot( inv_hessian, gradient ) )
         if check_for_convergence(W_old,W):
+            W=W_old
             print('Converged @ ',i)
             break; 
         if i % 1000 == 0:
             print('Running : ',i,W,W_old)
     
-    print('test : ',predict(np.array([[15],[155],[45]]),W))
+    print('test : ',predict(np.array([[15],[155],[45],[55]]),W))
         
 
 def run():

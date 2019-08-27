@@ -22,13 +22,23 @@ $$
 loss= \frac{1}{m}(y-y_{pred})^{2}
 $$
 
-
 For Logistic Regression ,
 
 $$
-loss = \frac{1}{m}(-ylog(h_{\theta}(x) \ -(1-y)( \ log(1-h_{\theta}(x) \ ) \ ) \ )
+loss = \frac{1}{m}(-ylog(h_{\theta}(x) \ -(1-y)( \ log(1-h_{\theta}(x) \ ) \ ) \ ) 
 $$
 
+Let's see how this equation came right now ,
 
+$$
+  Cost / Loss =
 
+\begin{cases}
+-log(x)  & \text{if $y$ is 1} \\
 
+-log(1-x) & \text{if $y$ is 0}
+
+\end{cases}
+$$
+
+y                                
