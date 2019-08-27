@@ -18,6 +18,10 @@ Folder `from_stratch` consists of ML projects that are build from scratch .
 
     Implementation of gradient-descent without using any ML frameworks , just using `numpy` for computation and `matplotlib` for visualization.
 
+4. [Logistic Regression](https://github.com/guruprasaad123/ml_for_life/tree/master/from_scratch/logistic_regression/Newtons%20method),
+
+   Implementation of *Newtons-method*  ( Second-order-Optimisation ) from scratch & using `numpy` for computation and `matplotlib` for visualization.
+
 ## [supervised](https://github.com/guruprasaad123/ml_for_life/tree/master/supervised)
 
 Folder `supervised` consists of Real-time-applications / Projects based on supervised Learning.
