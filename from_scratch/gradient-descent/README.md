@@ -1,6 +1,6 @@
 # Gradient Descend
 
-This project is all about learning how gradient works.So the best way to learn something is to implement it from scratch so in this project we'll implement `gradient-descent`algorithm which learns mapping between the two features and provides the line-of-best-fit (linear-regression).The Dataset represents `cycled distance vs calorie burned`.
+This project is all about learning how gradient works.So the best way to learn something is to implement it from scratch so in this project we'll implement `batch-gradient-descent`algorithm which learns mapping between the two features and provides the line-of-best-fit (linear-regression).The Dataset represents `cycled distance vs calorie burned`.
 
 ## Dependencies
 - [numpy == 1.16.2](https://pypi.org/project/numpy/) 
