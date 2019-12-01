@@ -55,7 +55,7 @@ def load_data(url):
     return ( df.iloc[:,:-1] , df.iloc[:,-1])
 
 def gradient_descent_runner(X,y,learning_rate=0.01,epochs=10000):
-    #X = add_intercept(X)
+    X = add_intercept(X)
     W = np.zeros(X.shape[1])
     #print('m =>' ,X)
 
@@ -103,7 +103,7 @@ def run():
     #         intercept[i] / X[i],
     #         sign_[i],
     #         pre[i] ) )
-    print(  )
+    #print(  )
 
     W = np.array([-6.13154479 , 0.60748623 ,  0.15197772])
 
@@ -111,6 +111,8 @@ def run():
     
     #Y_extreme = - (W[1] * X_extreme)) / W[1] + 1/W[1]
     Y_extreme = -( (W[0] * X_extreme ) + 1) / W[1]
+    Y_extreme = - (( np.dot(W[1] , X_extreme) ) + W[0] ) / W[2]
+
     print( X_extreme, Y_extreme )
     
     plt.plot( X_extreme , Y_extreme )
