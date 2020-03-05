@@ -38,14 +38,12 @@ def run():
     w0 , w1 = (lr.coef_[0][0] , lr.coef_[0][1])
     b = lr.intercept_[0]
 
-    print(' w0  = {} , w1 = {} , b = {} '.format(w0 , w1 , b) )
-
     x_treme = [np.min(X[0]) , np.max(X[1])]
     y_treme = - (( np.dot(w0 ,x_treme) ) + b ) / w1
 
     print( x_treme , y_treme)
 
-    #print(lr.coef_,lr.intercept_)
+    print(lr.coef_,lr.intercept_)
 
     plt.plot(x_treme , y_treme )
 
