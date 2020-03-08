@@ -1,6 +1,6 @@
 # Logistic Regression
 
-In this repo i have performed*Logistic regression* using *gradient-descent* which is optimization method on a sample dataset that we generated on our own.
+In this repo i have performed *Logistic regression* using *gradient-descent* which is optimization method on a sample dataset that we generated on our own.
 
 ## Dependencies
 
@@ -38,9 +38,6 @@ $$
 loss = \frac{1}{m}(-ylog(h_{\theta}(x) \ -(1-y)( \ log(1-h_{\theta}(x) \ ) \ ) \ ) 
 $$
 
-$$
-
-$$
 
  let's check this figure below and see how the Cost / Loss function works .
 
