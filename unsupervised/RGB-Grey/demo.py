@@ -2,8 +2,8 @@ import os
 import tensorflow as tf
 #import keras.layers.max_pooling2d
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.pyplot import savefig
+# import matplotlib.pyplot as plt
+# from matplotlib.pyplot import savefig
 import cv2
 
 def write_color_image(path,count):
