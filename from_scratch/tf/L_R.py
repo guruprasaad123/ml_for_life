@@ -24,6 +24,8 @@ scalar = StandardScaler()
 
 scaled_housing_data_plus_bias = scalar.fit_transform(housing_data_plus_bias)
 
+scaled_housing_data = scalar.fit_transform(housing_data.data)
+
 # print(scaled_housing_data_plus_bias)
 
 # print(housing_data_plus_bias)
@@ -33,14 +35,14 @@ scaled_housing_data_plus_bias = scalar.fit_transform(housing_data_plus_bias)
 learning_rate=0.01
 epochs = 1000
 
-x= tf.constant(housing_data_plus_bias,dtype=tf.float32,name='x')
+x= tf.constant(scaled_housing_data,dtype=tf.float32,name='x')
 y= tf.constant(housing_data.target.reshape(-1,1) ,dtype=tf.float32,name='y')
 x_t = tf.transpose(x)
 # theta = tf.matmul(tf.matrix_inverse(tf.matmul(x_t,x)),tf.matmul(x_t,y))
 
 # theta = tf.Variable(tf.random_uniform([n+1,1],-1.0,1.0),name="theta")
 
-m = tf.Variable(tf.random_uniform([n+1,1],-1.0,1.0),name="m")
+m = tf.Variable(tf.random_uniform([n,1],-1.0,1.0),name="m")
 b = tf.Variable(tf.random_uniform([1,1],-1.0,1.0),name="b")
 
 y_pred= tf.matmul(x,m)+b
