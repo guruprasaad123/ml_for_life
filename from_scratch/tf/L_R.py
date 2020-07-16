@@ -4,6 +4,7 @@ from sklearn.preprocessing import StandardScaler
 import tensorflow as tf 
 from datetime import datetime
 
+# setting log dir for tensorboard
 now = datetime.utcnow().strftime('%Y%m%d%H%M%S')
 root_dir = 'tf_logs'
 logdir = '{}/run-{}/'.format(root_dir,now)
@@ -67,6 +68,7 @@ b_ops = tf.assign(b, b- (learning_rate * b_gradients))
 
 init = tf.global_variables_initializer()
 
+# Initialize Tensorboard writter
 mse_summary = tf.summary.scalar('mse', mse)
 file_writer = tf.summary.FileWriter(logdir, tf.get_default_graph())
 
@@ -77,8 +79,10 @@ with tf.Session() as sess:
         if i % 100 == 0 :
             print("MSE = {}".format(mse.eval()))
             
+            # noting 'mse' 
             summary_str = mse_summary.eval()
-            
+
+            # and writting it onto file_writer for Visualization
             file_writer.add_summary(summary_str,i)
 
         sess.run([m_ops,b_ops])
@@ -86,5 +90,6 @@ with tf.Session() as sess:
     print("Reduced MSE = {}".format(mse.eval()))
     print("Best m = {} ,b = {}".format(m.eval(),b.eval()))
 
+    # close the file writer
     file_writer.close()
 
