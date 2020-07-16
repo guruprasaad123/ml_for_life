@@ -2,6 +2,13 @@ import numpy as np
 from sklearn.datasets import fetch_california_housing
 from sklearn.preprocessing import StandardScaler 
 import tensorflow as tf 
+from datetime import datetime
+
+now = datetime.utcnow().strftime('%Y%m%d%H%M%S')
+root_dir = 'tf_logs'
+logdir = '{}/run-{}/'.format(root_dir,now)
+
+
 
 housing_data = fetch_california_housing()
 
@@ -58,14 +65,24 @@ b_ops = tf.assign(b, b- (learning_rate * b_gradients))
 
 init = tf.global_variables_initializer()
 
+mse_summary = tf.summary.scalar('mse', mse)
+file_writer = tf.summary.FileWriter(logdir, tf.get_default_graph())
+
 with tf.Session() as sess:
     sess.run(init)
 
     for i in range(epochs):
         if i % 100 == 0 :
             print("MSE = {}".format(mse.eval()))
+            
+            summary_str = mse_summary.eval()
+            
+            file_writer.add_summary(summary_str,i)
+
         sess.run([m_ops,b_ops])
     
     print("Reduced MSE = {}".format(mse.eval()))
     print("Best m = {} ,b = {}".format(m.eval(),b.eval()))
+
+    file_writer.close()
 
