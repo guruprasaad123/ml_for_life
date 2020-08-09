@@ -91,5 +91,6 @@ with tf.Session() as sess:
     print("Best m = {} ,b = {}".format(m.eval(),b.eval()))
 
     # close the file writer
+    file_writer.flush()
     file_writer.close()
 
